@@ -8,6 +8,12 @@ metadata:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
 
+
+    alb.ingress.kubernetes.io/healthcheck-path: /
+    alb.ingress.kubernetes.io/healthcheck-port: traffic-port
+    alb.ingress.kubernetes.io/success-codes: "200"
+
+
     # FRONTEND CANARY
     alb.ingress.kubernetes.io/actions.frontend: |
       {
@@ -35,7 +41,7 @@ metadata:
 spec:
   ingressClassName: alb
   rules:
-    - host: www.socialecho.com
+    - host: k8s-socialec-socialec-c956ab9939-1438622374.ap-south-1.elb.amazonaws.com
       http:
         paths:
 
