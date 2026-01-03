@@ -22,7 +22,7 @@ spec:
         eks.amazonaws.com/nodegroup: frontend-canary-ng    # Canary node group
       containers:
       - name: backend
-        image: madithya/backend:11
+        image: madithya/backend:12
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 4000
