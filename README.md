@@ -34,10 +34,6 @@ The Kubernetes manifests deploy the following components on AWS EKS:
 
 ---
 
-*(Structure may vary slightly based on implementation)*
-
----
-
 ## 🚀 Deployment Strategy
 
 This repository implements **GitOps-based deployments** using **ArgoCD**:
