@@ -1,5 +1,5 @@
 # -------------------------------
-# 1️⃣ Stable Frontend Deployment (v1)
+# Stable Frontend Deployment (v1)
 # -------------------------------
 apiVersion: apps/v1
 kind: Deployment
@@ -52,6 +52,7 @@ spec:
     - port: 80
       targetPort: 80
       protocol: TCP
+
 
 
 
