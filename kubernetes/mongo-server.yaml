@@ -1,5 +1,5 @@
 # ===============================================
-# 1️⃣ StorageClass - Automatic EBS Provisioning
+#  StorageClass - Automatic EBS Provisioning
 # ===============================================
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
@@ -14,7 +14,7 @@ parameters:
 ---
 
 # ===============================================
-# 2️⃣ PersistentVolumeClaim (PVC)
+# PersistentVolumeClaim (PVC)
 # ===============================================
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -32,7 +32,7 @@ spec:
 ---
 
 # ===============================================
-# 3️⃣ MongoDB Deployment
+#  MongoDB Deployment
 # ===============================================
 apiVersion: apps/v1
 kind: Deployment
@@ -72,7 +72,7 @@ spec:
 ---
 
 # ===============================================
-# 4️⃣ MongoDB Service
+# MongoDB Service
 # ===============================================
 apiVersion: v1
 kind: Service
@@ -85,4 +85,5 @@ spec:
     app: mongo
   ports:
     - port: 27017
+
       targetPort: 27017
