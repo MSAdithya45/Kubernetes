@@ -96,16 +96,6 @@ GitHub: [https://github.com/MSAdithya45](https://github.com/MSAdithya45)
 ---
 
 
-
-## 👥 Contributors
-
-- **Muppidi Sai Adithya**  
-  GitHub: https://github.com/MSAdithya45  
-
-- **Mukhesh D N**  
-  Contributor
-
-
 ## 📄 Notes
 
 * This repository is intended for **educational and demonstration purposes**
