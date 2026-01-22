@@ -26,11 +26,6 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 4000
-        envFrom:
-        - configMapRef:
-            name: backend-config
-        - secretRef:
-            name: backend-secret
         resources:
           requests:
             cpu: "100m"
@@ -58,6 +53,7 @@ spec:
       targetPort: 4000
 
       protocol: TCP
+
 
 
 
