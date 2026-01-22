@@ -1,13 +1,11 @@
 # ===============================================
-# Backend Deployment
-# ===============================================
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: backend
   namespace: socialecho
 spec:
-  replicas: 1
+  replicas: 9
   selector:
     matchLabels:
       app: backend
@@ -24,10 +22,17 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 4000
+         resources:
+          requests:
+            cpu: "100m"
+            memory: "512Mi"
+          limits:
+            cpu: "500m"
+            memory: "1024Mi"
 ---
 
 # ===============================================
-#  Backend Service
+# 2️⃣ Backend Service
 # ===============================================
 apiVersion: v1
 kind: Service
@@ -41,7 +46,7 @@ spec:
   ports:
     - port: 4000
       targetPort: 4000
-      protocol: TCP
+
 
 
 
